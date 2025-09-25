@@ -10,8 +10,10 @@
 *.sln
 *.sw?
 # -- front--
-
+.vite
 node_modules
 dist
 
 # -- server --
+__pycache__
+.pytest_cache
