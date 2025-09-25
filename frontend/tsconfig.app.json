@@ -23,11 +23,9 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
 		"baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	},
-	"include": ["src", "router.tsx"],
+	"include": ["src", "router.tsx"]
 }

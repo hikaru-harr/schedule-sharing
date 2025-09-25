@@ -1,7 +1,7 @@
-import SignUp from '../features/signup/SignUp'
+import SignUp from '../features/signup/SignUp';
 
 function SignUpScreen() {
-  return (<SignUp />)
+	return <SignUp />;
 }
 
-export default SignUpScreen
+export default SignUpScreen;
