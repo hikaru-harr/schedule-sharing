@@ -1,0 +1,17 @@
+# -- common --
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# -- front--
+
+node_modules
+dist
+
+# -- server --

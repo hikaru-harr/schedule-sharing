@@ -1,0 +1,32 @@
+{
+	"name": "frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"biome:format": "pnpm exec biome format --write .",
+		"biome:lint": "pnpm exec biome lint --write .",
+		"biome:write": "pnpm exec biome check --write ."
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.13",
+		"@tanstack/react-form": "^1.21.2",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-router": "^7.9.1",
+		"tailwindcss": "^4.1.13",
+		"zod": "^4.1.9"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"@vitejs/plugin-react": "^5.0.2",
+		"globals": "^16.4.0",
+		"typescript": "~5.8.3",
+		"vite": "^7.1.6"
+	}
+}
