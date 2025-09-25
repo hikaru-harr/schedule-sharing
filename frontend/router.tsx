@@ -1,9 +1,14 @@
 import { createBrowserRouter } from "react-router"
-import App from "./src/App"
+import SignUpScreen from "./src/screens/SignUpScreen"
+import Login from "./src/screens/Login"
 
 export const router = createBrowserRouter([
     {
-        path: "/",
-        element: <App />
-    }
+        path: "/signup",
+        element: <SignUpScreen />
+    },
+    {
+        path: "/login",
+        element: <Login />
+    },
 ])
