@@ -1,8 +1,7 @@
 from pydantic import BaseModel, Field, EmailStr
 
 class SignUpSchema(BaseModel):
-    email: EmailStr = Field(..., description="ログイン用メールアドレス")
-    password: str = Field(min_length=8, max_length=128)
+    idToken: str = Field(..., description="firebase認証用のidToken")
 
     model_config = {
         "extra": "forbid"

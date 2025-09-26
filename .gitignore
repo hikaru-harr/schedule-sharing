@@ -21,3 +21,4 @@ __pycache__
 .pytest_cache
 *.pyc
 .venv
+schedule-sharing-20479-firebase-adminsdk-fbsvc-2d71cb9acc.json
