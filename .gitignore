@@ -9,9 +9,16 @@
 *.njsproj
 *.sln
 *.sw?
-# -- front--
+.env
 
+# -- front--
+.vite
 node_modules
 dist
 
 # -- server --
+__pycache__
+.pytest_cache
+*.pyc
+.venv
+schedule-sharing-20479-firebase-adminsdk-fbsvc-2d71cb9acc.json
