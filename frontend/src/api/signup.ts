@@ -3,6 +3,7 @@ export const signupAPI = async (idToken: string) => {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
+			"Authorization": `Bearer ${idToken}`
 		},
 		body: JSON.stringify({idToken}),
 	});
