@@ -14,7 +14,7 @@ function SignUp() {
 			password: '',
 		},
 	});
-	
+
 	const { onSignUpSubmit } = useSignUpHook();
 
 	return (

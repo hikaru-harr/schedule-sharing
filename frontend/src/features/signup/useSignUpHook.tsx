@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { signupAPI } from '@/api/signup';
+import { signUp } from '@/interface/signup';
 import type { SignUpFormType } from '@/types/signup';
 
 const useSignUpHook = () => {
@@ -9,15 +9,14 @@ const useSignUpHook = () => {
 	const [requestState, setRequestState] = useState({ loading: false, error: false });
 
 	const onSignUpSubmit = async (data: SignUpFormType) => {
-		setRequestState({ ...requestState, loading: true });
-
-		const result = await signupAPI(data);
-
-		if (!result) {
+		setRequestState({ error: false, loading: true });
+		const result = await signUp({ ...data });
+		if (result.status) {
+			navigate('/login');
+			setRequestState({ loading: false, error: false });
+		} else {
 			setRequestState({ loading: false, error: true });
-			return;
 		}
-		navigate('/login');
 	};
 	return {
 		requestState,
